@@ -2,11 +2,60 @@
 <html lang="en-us">
 <head>
     <meta name="author" content="Jordan Eldredge">
-    <meta name="description" content="Assignment portal for Jordan Eldredge in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="description" content="Course assignment portal for Jordan Eldredge in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1">
-    <title>FALL-2023 WDD230</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../portal/styles/base.css">
+    <link rel="stylesheet" href="../portal/styles/larger.css">
+    <title>WDD 230 - Portal - Jordan Eldredge</title>
 </head>
 <body>
+    <div class="content">
+    <header>
+        <div id="header-links">
+            <span id="link-byui"><a href="https://www.byui.edu/">BYU-Idaho</a></span>
+            <span id="link-linkedin"><a href="https://www.linkedin.com/">LinkedIn</a></span>
+            <span id="ham-menu" class="material-symbols-outlined">Menu</span>
+        </div>
+        <h1 id="author">Jordan M. Eldredge</h1>
+    </header>
+    <main>
+        <h2 class="page-title">WDD 230: Course Activity Portal<hr></h2>
+        
+        <div id="activities">
+            <h3 class="box-title">Learning Activities</h3>
+            <div class="box-content">
+                <ul>
+                    <li>Week 01: <a href="../week01/holygrail.html">Grail</a> | <a href="../week01/media-query.html">Media Query</a> | <a href="index.html">Site Plan</a></li>
+                    <li>Week 02: </li>
+                    <li>Week 03: </li>
+                    <li>Week 04: </li>
+                    <li>Week 05: </li>
+                    <li>Week 06: </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="project">
+            <h3 class="box-title">Project</h3>
+            <div class="box-content">
+                <a href="index.html">Sandy Chamber of Commerce</a>
+            </div>
+        </div>
+
+        <div id="information">
+            <h3 class="box-title">Information</h3>
+            <div class="box-content">
+                <span id="weather-info"></span>
+                <span id="visit-count"></span>
+            </div>
+        </div>
+    </main>
+    </div>
+    <footer class="footer">
+        <p id="copy">&copy; 2023 | Jordan Eldredge | WDD 230</p>
+        <p id="modified">Last Modification:<span id="last-edit"></span></p>
+    </footer>
 </body>
