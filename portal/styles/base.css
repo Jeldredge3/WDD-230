@@ -1,0 +1,162 @@
+/* Fonts from Google Fonts @ https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
+
+/* Web Icons from Google Fonts @ https://fonts.google.com/icons*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+:root {
+    /* Colors */
+        --primary: #08639f;
+        --secondary: #d78509;
+        --accent1: #d72020;
+        --accent2: #e6fbf7;
+        
+        --light: #ffffff;
+        --dark: #000000;
+    
+        --background: #ffffff;
+
+        --shadow: #0303038e;
+        --italicized: #888888;
+
+    /* Fonts */
+        --heading: 'Crimson Text', georgia, serif;
+        --paragraph: 'PT Sans Narrow', tahoma, sans-serif;
+    }
+
+/* Font Sizes */
+h1 {font-size: 2.5em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 1.5em;}
+li, p {font-size: 1em;}
+
+h1, h2, h3 {
+    font-family: var(--heading);
+    font-weight: 700;
+    margin: 0px;
+}
+h4, h5, h6 {
+    font-family: var(--heading);
+    font-weight: 400;
+    margin: 0px;
+}
+a, li, p, span {
+    font-family: var(--paragraph);
+    font-weight: 400;
+    margin: 0px;
+}
+
+/* Override Default CSS */
+a {text-decoration: none;}
+li {list-style: none;}
+ul {padding-left: 16px;}
+
+/* Page CSS */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+header, main, body {
+    margin: 0px;
+}
+
+header {
+    background-color: var(--primary);
+}
+
+#header-links {
+display: flex;
+background-color: var(--dark);
+}
+
+#header-links span {
+    margin: 10px;
+}
+
+#header-links a:link {color: white;}
+#header-links a:visited {color: white;}
+#header-links a:hover {color: gray;}
+#header-links a:active {color: white;}
+#ham-menu:hover {color: gray;}
+
+#link-byui {}
+#link-linkedin {}
+#ham-menu {
+    color: white;
+    cursor: pointer;
+}
+
+#author {
+    padding: 20px 0px;
+    text-align: center;
+    color: var(--light);
+}
+
+main {
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--background);
+}
+
+.page-title {
+    margin: 10px 0px;
+    color: var(--dark);
+}
+
+#activities, #project, #information {
+    margin: 20px 0px;
+    border-radius: 6px;
+    background-color: var(--background);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+}
+
+.box-title {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 6px 12px;
+    background-color: var(--accent1);
+    background-image: linear-gradient(var(--accent1), var(--shadow));
+    color: var(--light);
+}
+
+.box-content {
+    min-height: 60px;
+    padding: 10px;
+}
+
+footer {
+    padding: 20px 0px;
+    text-align: center;
+    background-color: var(--secondary);
+}
+#copy {
+    color: var(--light);
+} 
+#modified {
+    color: var(--accent2);
+    padding-top: 10px;
+}
+
+hr {
+    border: 2px solid var(--secondary);
+    border-radius: 6px;
+}
+
+/* Sticky Footer */
+html, body {
+    height: 100%;
+}
+.content {
+    flex: 1 0 auto;
+}
+.footer {
+    flex-shrink: 0;
+}
