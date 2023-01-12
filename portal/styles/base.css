@@ -1,5 +1,5 @@
 /* Fonts from Google Fonts @ https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=PT+Sans:wght@400;700&display=swap');*/
 
 /* Web Icons from Google Fonts @ https://fonts.google.com/icons*/
 .material-symbols-outlined {
@@ -120,7 +120,7 @@ main {
 }
 
 .page-title {
-    margin: 10px 0px;
+    margin: 20px 0px;
     color: var(--secondary);
 }
 
@@ -166,6 +166,7 @@ footer {
 }
 
 hr {
+    margin-top: 20px;
     border: 3px solid var(--accent1);
     border-radius: 6px;
 }
