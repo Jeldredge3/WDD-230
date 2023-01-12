@@ -1,6 +1,30 @@
 /* Large Display Properties (~ 520px+ wide) */
 @media screen and (min-width: 32.5em) {
 
+h2 {font-size: 2.5em;}
+
+.header-top {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 1fr 100px auto 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 3rem;
+}
+
+#profile {
+    grid-column: 2/3; grid-row: 1/2;
+}
+
+#author {
+    grid-column: 3/4; grid-row: 1/2;
+    padding: 30px 0px;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;

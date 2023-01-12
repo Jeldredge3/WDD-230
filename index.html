@@ -14,12 +14,15 @@
 <body>
     <div class="content">
     <header>
-        <div id="header-links">
+        <div class="header-top">
             <span id="link-byui"><a href="https://www.byui.edu/">BYU-Idaho</a></span>
             <span id="link-linkedin"><a href="https://www.linkedin.com/">LinkedIn</a></span>
             <span id="ham-menu" class="material-symbols-outlined">Menu</span>
         </div>
-        <h1 id="author">Jordan M. Eldredge</h1>
+        <div class="header-bottom">
+            <img id="profile" src="../portal/images/profile-100x100.jpg" alt="Picture of me" width="100" height="100">
+            <h1 id="author">Jordan M. Eldredge</h1>
+        </div>
     </header>
     <main>
         <h2 class="page-title">WDD 230: Course Activity Portal<hr></h2>
@@ -49,13 +52,15 @@
             <h3 class="box-title">Information</h3>
             <div class="box-content">
                 <span id="weather-info"></span>
-                <span id="visit-count"></span>
+                <p>Visit Count: <span id="visit-count"></span></p>
             </div>
         </div>
     </main>
     </div>
     <footer class="footer">
-        <p id="copy">&copy; 2023 | Jordan Eldredge | WDD 230</p>
-        <p id="modified">Last Modification:<span id="last-edit"></span></p>
+        <p id="copy">&copy; <span id="current-year"></span> | Jordan Eldredge | USA</p>
+        <p class="highlight">Last Modification: <span id="last-modified" class="highlight"></span></p>
     </footer>
+    <script src="../portal/scripts/get-dates.js"></script>
 </body>
+</html>
