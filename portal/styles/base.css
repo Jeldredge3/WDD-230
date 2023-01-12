@@ -1,5 +1,5 @@
 /* Fonts from Google Fonts @ https://fonts.google.com */
-/*@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=PT+Sans:wght@400;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=PT+Sans&display=swap');
 
 /* Web Icons from Google Fonts @ https://fonts.google.com/icons*/
 .material-symbols-outlined {
@@ -24,7 +24,7 @@
         --shading: #03030330;
 
     /* Fonts */
-        --heading: 'Crimson Text', georgia, serif;
+        --heading: 'Domine', georgia, serif;
         --paragraph: 'PT Sans Narrow', tahoma, sans-serif;
     }
 
@@ -41,7 +41,7 @@ h1, h2, h3 {
 }
 h4, h5, h6 {
     font-family: var(--heading);
-    font-weight: 400;
+    font-weight: 700;
     margin: 0px;
 }
 a, li, p, span {
