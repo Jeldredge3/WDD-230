@@ -12,18 +12,16 @@
 
 :root {
     /* Colors */
-        --primary: #08639f;
-        --secondary: #d78509;
-        --accent1: #d72020;
-        --accent2: #e6fbf7;
+        --primary: #089f3f;
+        --secondary: #12130F;
+        --accent1: #5D737E;
+        --accent2: #fdffa3;
         
-        --light: #ffffff;
-        --dark: #000000;
-    
-        --background: #ffffff;
+        --white: #ffffff;
+        --black: #000000;
 
         --shadow: #0303038e;
-        --italicized: #888888;
+        --shading: #03030330;
 
     /* Fonts */
         --heading: 'Crimson Text', georgia, serif;
@@ -32,7 +30,7 @@
 
 /* Font Sizes */
 h1 {font-size: 2.5em;}
-h2 {font-size: 2.5em;}
+h2 {font-size: 2.3em;}
 h3 {font-size: 1.5em;}
 li, p {font-size: 1em;}
 
@@ -61,7 +59,7 @@ ul {padding-left: 16px;}
 body {
     display: flex;
     flex-direction: column;
-    background-color: var(--background);
+    background-color: var(--white);
 }
 
 header, main, body {
@@ -72,49 +70,64 @@ header {
     background-color: var(--primary);
 }
 
-#header-links {
-display: flex;
-background-color: var(--dark);
+.header-top {
+    display: block;
+    background-color: var(--secondary);
 }
 
-#header-links span {
-    margin: 10px;
+.header-top span {
+    display: block;
+    text-align: center;
 }
 
-#header-links a:link {color: white;}
-#header-links a:visited {color: white;}
-#header-links a:hover {color: gray;}
-#header-links a:active {color: white;}
-#ham-menu:hover {color: gray;}
+header a {padding: 10px;}
+header a:link, #ham-menu {color: var(--white);}
+header a:visited {color: var(--white);}
+header a:hover {color: var(--accent2);}
+header a:active {color: var(--accent1);}
 
-#link-byui {}
-#link-linkedin {}
-#ham-menu {
-    color: white;
-    cursor: pointer;
+#ham-menu:hover {color: var(--accent2);}
+#ham-menu:active {color: var(--accent1); background-color: var(--black);}
+
+#link-byui, #link-linkedin, #ham-menu {margin: auto 0; padding: 10px;}
+#ham-menu {cursor: pointer;}
+
+main a {padding: 4px 8px;}
+main a:hover {background-color: var(--secondary); color: var(--accent2); border-radius: 6px;}
+main a:active {color: var(--accent1);}
+
+.header-bottom {
+    display: flex;
+    padding: 30px;
+}
+
+#profile {
+    width: 100px; height: 100px;
+    margin-right: 10px;
+    border: 6px solid var(--white);
+    border-radius: 60px;
 }
 
 #author {
-    padding: 20px 0px;
+    padding: 0px;
     text-align: center;
-    color: var(--light);
+    color: var(--white);
 }
 
 main {
     display: block;
     padding: 10px 20px;
-    background-color: var(--background);
 }
 
 .page-title {
     margin: 10px 0px;
-    color: var(--dark);
+    color: var(--secondary);
 }
 
 #activities, #project, #information {
     margin: 20px 0px;
     border-radius: 6px;
-    background-color: var(--background);
+    background-color: var(--white);
     box-shadow: 0px 2px 5px 0px var(--shadow);
 }
 
@@ -123,30 +136,37 @@ main {
     border-top-right-radius: 6px;
     padding: 6px 12px;
     background-color: var(--accent1);
-    background-image: linear-gradient(var(--accent1), var(--shadow));
-    color: var(--light);
+    background-image: linear-gradient(var(--accent1), var(--shading));
+    color: var(--white);
 }
 
 .box-content {
-    min-height: 60px;
+    height: auto;
+    min-height: 80px;
     padding: 10px;
+}
+
+#activities li {
+    margin: 6px 0px;
+}
+#information p {
+    padding-left: 10px;
 }
 
 footer {
     padding: 20px 0px;
     text-align: center;
     background-color: var(--secondary);
+    color: var(--white);
 }
-#copy {
-    color: var(--light);
-} 
-#modified {
+
+.highlight {
     color: var(--accent2);
     padding-top: 10px;
 }
 
 hr {
-    border: 2px solid var(--secondary);
+    border: 3px solid var(--accent1);
     border-radius: 6px;
 }
 
