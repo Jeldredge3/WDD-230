@@ -1,14 +1,14 @@
 /* Fonts from Google Fonts @ https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=PT+Sans&display=swap');
 
-/* Web Icons from Google Fonts @ https://fonts.google.com/icons*/
+/* Web Icons from Google Fonts @ https://fonts.google.com/icons
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
   'wght' 500,
   'GRAD' 0,
   'opsz' 48
-}
+} */
 
 :root {
     /* Colors */
