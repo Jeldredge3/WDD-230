@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta name="author" content="Jordan Eldredge">
+    <meta name="description" content="Chamber of Commerce project for Jordan Eldredge in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="scc-favicon.ico">
+    <link rel="stylesheet" href="../chamber/styles/normalize.css">
+    <link rel="stylesheet" href="../chamber/styles/base.css">
+    <link rel="stylesheet" href="../chamber/styles/large.css">
+    <title>WDD 230 - Chamber of Commerce - Jordan Eldredge</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script> <!-- Enables Font Awesome Icons -->
+
+    <div class="page-content"> <!-- Start of content -->
+    <header>
+        <img id="header-logo" src="../chamber/images/sandycitychamber-b-100x100.jpg" alt="Sandy City Chamber Logo" width="100" height="100">
+        <h1 id="header-company">Sandy City Chamber</h1>
+        <span id="current-date"></span>
+        <img id="link-facebook" src="../chamber/images/facebook-circle-white.png" alt="Facebook Logo" width="64" height="64">
+        <img id="link-linkedin" src="../chamber/images/linkedin-circle-white.png" alt="LinkedIn Logo" width="64" height="64">
+    </header>  
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#"><i class="fa-solid fa-bars"></i>Menu</a></li> <!-- Hamburger Menu -->
+            <li><a class="nav-current" href="index.html">Home</a></li> <!-- Current Page -->
+            <li><a href="index.html">Discover</a></li> 
+            <li><a href="index.html">Directory</a></li> 
+            <li><a href="index.html">Join</a></li> 
+        </ul>
+    </nav>
+
+    <main>
+        <div class="call-to-action">
+            <h2 class="box-title">Call to Action</h2>
+            <p class="box-content">Example text</p>
+        </div>
+        <div class="events">
+            <h2 class="box-title">Events</h2>
+            <p class="box-content">Example text</p>
+        </div>
+        <div class="weather">
+            <h2 class="box-title">Weather</h2>
+            <p class="box-content">Example text</p>
+        </div>
+        <div class="news-release">
+            <h2 class="box-title">News Release</h2>
+            <p class="box-content">Example text</p>
+        </div>
+        <div class="spotlight">
+            <h2 class="box-title">Spotlight</h2>
+            <div class="spotlight-grid">
+                <div class="sub-box"><p>Spotlight 1</p></div>
+                <div class="sub-box"><p>Spotlight 2</p></div>
+                <div class="sub-box"><p>Spotlight 3</p></div>
+            </div>
+            
+        </div>
+        <div class="join">
+            <h2 class="box-title">Join</h2>
+            <p class="box-content">Example text</p>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="info-company"> 
+            <img id="footer-logo" src="../chamber/images/sandycitychamber-a-100x100.jpg" alt="Sandy City Chamber Logo" width="100" height="100">
+            <h3 id="footer-company">Sandy City Chamber</h3>
+        </div>
+        <div class="info-contact">
+            <p id="company-address"><strong>123 West Ridge Road, Sandy, UT 84070</strong></p>
+            <p id="company-email"><strong>contactus@sandycitychamber.us</strong></p>
+            <p id="company-phone"><strong>(801)-000-0000</strong></p>
+            <p id="company-map"><span class="location-icon"><i class="fas fa-map-marker-alt"></i></span><a href="index.html">Location Map</a></p>
+        </div>
+
+        <div class="info-stats">
+            <p id="visits">Total visits: <span id="visits-total"></span> | Days since last visit: <span id="visits-last"></span></p>
+            <p id="credits"></p>
+            <p id="copy">&copy; <span id="current-year"></span> Sandy City Chamber | Jordan Eldredge | Last Modification: <span id="last-modified" class="highlight"></span></p>
+        </div>
+    </footer>
+
+    <script src="../chamber/scripts/get-dates.js"></script> <!-- Page Scripts -->
+
+    </div> <!-- End of content -->
+</body>
+</html>
