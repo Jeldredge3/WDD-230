@@ -18,10 +18,16 @@
         --accent2: #fdffa3;
         
         --white: #ffffff;
+        --dark: #212222;
         --black: #000000;
 
         --shadow: #0303038e;
         --shading: #03030330;
+
+    /* Status Colors */
+        --good: #089f3f;
+        --poor: #bdb630;
+        --bad: #cb2121;
 
     /* Fonts */
         --heading: 'Domine', georgia, serif;
@@ -71,6 +77,7 @@ header {
 
 .header-top {
     display: block;
+    height: auto;
     background-color: var(--secondary);
 }
 
@@ -80,21 +87,95 @@ header {
 }
 
 header a {padding: 10px;}
-header a:link, #ham-menu {color: var(--white);}
+header a:link, .ham-menu {color: var(--white);}
 header a:visited {color: var(--white);}
 header a:hover {color: var(--accent2);}
 header a:active {color: var(--accent1);}
 
-#ham-menu:hover {color: var(--accent2);}
-#ham-menu:active {color: var(--accent1); background-color: var(--black);}
+.ham-menu:hover {color: var(--accent2);}
+.ham-menu:active {color: var(--accent1); background-color: var(--black);}
 
-#link-byui, #link-linkedin, #ham-menu {margin: auto 0; padding: 10px;}
-#ham-menu {cursor: pointer;}
+#link-byui, #link-linkedin, .ham-menu {margin: auto 0; padding: 10px;}
+.ham-menu {cursor: pointer;}
 
 main a {padding: 4px 8px;}
 main a:hover {background-color: var(--secondary); color: var(--accent2); border-radius: 6px;}
 main a:active {color: var(--accent1);}
 
+/* Responsive Menu */
+.menu {
+    width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 10;
+	overflow: hidden;
+    background-color: var(--secondary);
+    color: var(--white);
+    background: linear-gradient(to bottom, var(--black), var(--secondary));
+	box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
+}
+
+.menu li:hover  {
+    background-color: var(--black);
+    color: var(--accent2);
+}
+
+.menu li p {
+	display: block;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+	padding: 10px 10px 10px 0px;
+	border-bottom: 1px solid var(--shadow);
+}
+
+.menu li span {
+    padding-left: 10px;
+}
+
+.active {
+    background-color: var(--black);
+    color: var(--accent1);
+}
+
+li p.menu-item {
+	display: none;
+}
+
+li p.open {
+	display: flex;
+}
+
+/* Temporary Toggle CSS Properties */
+.off {
+    color: var(--bad);
+}
+
+.on {
+    color: var(--good);
+}
+
+.dark-background {
+    background-color: var(--dark);
+}
+.dark-text h2 {
+    color: var(--accent1);
+}
+.dark-text hr {
+    border-color: var(--accent1);
+}
+.dark .box-title {
+    background-color: var(--secondary);
+    background-image: none;
+    color: var(--accent1);
+}
+.dark {
+    background-color: var(--black);
+    color: var(--accent1);
+}
+
+/* Everything Below the Menu */
 .header-bottom {
     display: flex;
     padding: 30px;
@@ -115,18 +196,39 @@ main a:active {color: var(--accent1);}
 
 main {
     display: block;
+    margin: 0 auto;
     padding: 10px 20px;
 }
 
-.page-title {
+#hero {
+    position: relative;
+}
+
+#hero-text {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    padding: 10px 20px;
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--secondary);
+}
+
+#hero-img {
+    width: 100%; height: auto;
+    margin-top: 10px;
+}
+
+#page-title {
     margin: 20px 0px;
     color: var(--secondary);
 }
 
 #activities, #project, #information {
-    margin: 20px 0px;
-    border-radius: 6px;
-    background-color: var(--white);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 20px;
     box-shadow: 0px 2px 5px 0px var(--shadow);
 }
 
@@ -151,6 +253,9 @@ main {
 #information p {
     padding-left: 10px;
 }
+#visit-count {
+    font-weight: 600;
+}
 
 footer {
     padding: 20px 0px;
@@ -166,8 +271,13 @@ footer {
 
 hr {
     margin-top: 20px;
-    border: 3px solid var(--accent1);
+    border: 3px solid var(--secondary);
     border-radius: 6px;
+}
+
+img {
+    display: block;
+    width: 100%; height: auto;
 }
 
 /* Sticky Footer */

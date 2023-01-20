@@ -27,7 +27,14 @@
         <div class="header-top">
             <span id="link-byui"><a href="https://www.byui.edu/">BYU-Idaho</a></span>
             <span id="link-linkedin"><a href="https://www.linkedin.com/">LinkedIn</a></span>
-            <span id="ham-menu"><i class="fas fa-bars"></i></span>
+            <span id="menu-button" class="ham-menu"><i id="menu-icon" class="fa-solid fa-bars"></i></span>
+        </div>
+        <div class="header-middle">
+            <ul class="menu">
+                <li id="dark-mode">
+                    <p class="menu-item">Dark Mode <span id="dark-mode-status">()</span></p>
+                </li>
+            </ul>
         </div>
         <div class="header-bottom">
             <img id="profile" src="portal/images/profile-100x100.jpg" alt="Picture of me" width="100" height="100">
@@ -35,11 +42,23 @@
         </div>
     </header>
     <main>
-        <div class="page-title">
+
+        <div id="hero">
+            <picture>
+                <source media="(max-width: 520px)" srcset="portal/images/draper-temple-500x500.jpg">
+                <source media="(min-width: 520px) and (max-width: 1080px)" srcset="portal/images/draper-temple-1080x675.jpg">
+                <source media="(min-width: 1080px)" srcset="portal/images/draper-temple-1920x1200.jpg">
+                <img id="hero-img" src="portal/images/draper-temple-10.jpg" alt="Picture of the Draper Utah Temple">
+            </picture>
+            <div id="hero-text">Draper Utah Temple</div>
+        </div>
+
+        <div id="page-title" class="adjustable-b">
             <h2>WDD 230: Course Activity Portal</h2>
             <hr>
         </div>
-        <div id="activities">
+
+        <div id="activities" class="adjustable">
             <h2 class="box-title">Learning Activities</h2>
             <div class="box-content">
                 <ul>
@@ -53,20 +72,21 @@
             </div>
         </div>
 
-        <div id="project">
+        <div id="project" class="adjustable">
             <h2 class="box-title">Project</h2>
             <div class="box-content">
-                <a href="index.html">Sandy Chamber of Commerce</a>
+                <a href="#">Sandy Chamber of Commerce</a>
             </div>
         </div>
 
-        <div id="information">
+        <div id="information" class="adjustable">
             <h2 class="box-title">Information</h2>
             <div class="box-content">
                 <span id="weather-info"></span>
                 <p>Visit Count: <span id="visit-count"></span></p>
             </div>
         </div>
+
     </main>
     </div>
     <footer class="footer">
@@ -74,5 +94,8 @@
         <p class="highlight">Last Modification: <span id="last-modified" class="highlight"></span></p>
     </footer>
     <script src="portal/scripts/get-dates.js"></script>
+    <script src="portal/scripts/last-visited.js"></script>
+    <script src="portal/scripts/responsive-menu.js"></script>
+    <script src="portal/scripts/dark-mode.js"></script>
 </body>
 </html>
