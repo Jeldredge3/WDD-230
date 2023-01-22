@@ -9,7 +9,14 @@
     <link rel="shortcut icon" href="scc-favicon.ico">
     <link rel="stylesheet" href="../chamber/styles/normalize.css">
     <link rel="stylesheet" href="../chamber/styles/base.css">
-    <link rel="stylesheet" href="../chamber/styles/large.css">
+    <link rel="stylesheet" href="../chamber/styles/larger.css">
+
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="WDD230 Chamber of Commerce Project">
+    <meta name="og:description" content="Chamber of Commerce Project for Jordan Eldredge in WDD230 at BYU-I Online.">
+    <meta name="og:image" content="../portal/images/draper-canyon-1080.jpg">
+    <meta name="og:url" content="https://jeldredge3.github.io/WDD-230/chamber">
+
     <title>WDD 230 - Chamber of Commerce - Jordan Eldredge</title>
 </head>
 <body>
@@ -20,13 +27,13 @@
         <img id="header-logo" src="../chamber/images/sandycitychamber-b-100x100.jpg" alt="Sandy City Chamber Logo" width="100" height="100">
         <h1 id="header-company">Sandy City Chamber</h1>
         <span id="current-date"></span>
-        <img id="link-facebook" src="../chamber/images/facebook-circle-white.png" alt="Facebook Logo" width="64" height="64">
-        <img id="link-linkedin" src="../chamber/images/linkedin-circle-white.png" alt="LinkedIn Logo" width="64" height="64">
+        <img id="link-facebook" src="../chamber/images/facebook-w-100x100.webp" alt="Facebook Logo" width="64" height="64">
+        <img id="link-linkedin" src="../chamber/images/linkedin-w-100x100.webp" alt="LinkedIn Logo" width="64" height="64">
     </header>  
 
     <nav>
         <ul class="navigation">
-            <li><a class="ham" href="#"><i class="fa-solid fa-bars"></i>Menu</a></li> <!-- Hamburger Menu -->
+            <li><a class="ham" href="#"><i id="nav-icon" class="fa-solid fa-bars"></i></a></li> <!-- Hamburger Menu -->
             <li><a class="nav-current" href="index.html">Home</a></li> <!-- Current Page -->
             <li><a href="index.html">Discover</a></li> 
             <li><a href="index.html">Directory</a></li> 
@@ -40,19 +47,17 @@
             <p class="box-content">Example text</p>
         </div>
         <div class="events">
-            <h2 class="box-title">Events</h2>
-            <p class="box-content">Example text</p>
+            <h3 class="box-title">Events</h3>
+            <h4 class="box-subtitle">Event Name</h4>
+            <p class="box-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                Aenean commodo ligula eget dolor. Aenean massa.</p>
         </div>
         <div class="weather">
-            <h2 class="box-title">Weather</h2>
-            <p class="box-content">Example text</p>
-        </div>
-        <div class="news-release">
-            <h2 class="box-title">News Release</h2>
+            <h3 class="box-title">Weather</h3>
             <p class="box-content">Example text</p>
         </div>
         <div class="spotlight">
-            <h2 class="box-title">Spotlight</h2>
+            <h3 class="box-title">Spotlight</h3>
             <div class="spotlight-grid">
                 <div class="sub-box"><p>Spotlight 1</p></div>
                 <div class="sub-box"><p>Spotlight 2</p></div>
@@ -61,14 +66,15 @@
             
         </div>
         <div class="join">
-            <h2 class="box-title">Join</h2>
-            <p class="box-content">Example text</p>
+            <h3 class="box-title">Join</h3>
+            <p class="box-content">Want to be part of our community? Apply for our Chamber of Commerce today! We look forward to working with you.</p>
+            <button id="join-button">Join</button>
         </div>
     </main>
     
     <footer class="footer">
         <div class="info-company"> 
-            <img id="footer-logo" src="../chamber/images/sandycitychamber-a-100x100.jpg" alt="Sandy City Chamber Logo" width="100" height="100">
+            <img id="footer-logo" src="../chamber/images/sandycitychamber-a-180x180.jpg" alt="Sandy City Chamber Logo" width="180" height="180">
             <h3 id="footer-company">Sandy City Chamber</h3>
         </div>
         <div class="info-contact">
