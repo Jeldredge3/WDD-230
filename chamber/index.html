@@ -21,30 +21,38 @@
 </head>
 <body>
     <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script> <!-- Enables Font Awesome Icons -->
-
-    <div class="page-content"> <!-- Start of content -->
+    <!-- Start of content -->
+    <div class="page-content"> 
     <header>
         <img id="header-logo" src="../chamber/images/sandycitychamber-b-100x100.jpg" alt="Sandy City Chamber Logo" width="100" height="100">
         <h1 id="header-company">Sandy City Chamber</h1>
         <span id="current-date"></span>
-        <img id="link-facebook" src="../chamber/images/facebook-w-100x100.webp" alt="Facebook Logo" width="64" height="64">
-        <img id="link-linkedin" src="../chamber/images/linkedin-w-100x100.webp" alt="LinkedIn Logo" width="64" height="64">
+        <div id="header-links">
+            <a href="https://www.facebook.com/"><img id="link-facebook" src="../chamber/images/facebook-w-100x100.webp" alt="Facebook Logo" width="64" height="64"></a>
+            <a href="https://www.linkedin.com/"><img id="link-linkedin" src="../chamber/images/linkedin-w-100x100.webp" alt="LinkedIn Logo" width="64" height="64"></a>
+        </div>
     </header>  
 
     <nav>
         <ul class="navigation">
             <li><a class="ham" href="#"><i id="nav-icon" class="fa-solid fa-bars"></i></a></li> <!-- Hamburger Menu -->
             <li><a class="nav-current" href="index.html">Home</a></li> <!-- Current Page -->
-            <li><a href="index.html">Discover</a></li> 
+            <li><a href="discover.html">Discover</a></li> 
             <li><a href="index.html">Directory</a></li> 
             <li><a href="index.html">Join</a></li> 
         </ul>
     </nav>
 
-    <main>
+    <main class="home-grid">
         <div class="call-to-action">
-            <h2 class="box-title">Call to Action</h2>
-            <p class="box-content">Example text</p>
+            <picture id="hero-image">
+                <source media="(max-width: 600px)" srcset="../chamber/images/placeholder/placeholder-600x400.webp">
+                <source media="(min-width: 600px) and (max-width: 1280px)" srcset="../chamber/images/placeholder/placeholder-1280x720.webp">
+                <source media="(min-width: 1280px)" srcset="../chamber/images/placeholder/placeholder-1920x1080.webp">
+                <img data-src="../chamber/images/placeholder/placeholder-600x400.webp" src="../chamber/images/placeholder/placeholder-1920x1080.webp" alt="Image of Sandy, Utah" width= "600" height="400">
+            </picture>
+            <h2 class="hero-title">Call to Action</h2>
+
         </div>
         <div class="events">
             <h3 class="box-title">Events</h3>
@@ -72,7 +80,7 @@
         </div>
     </main>
     
-    <footer class="footer">
+    <footer>
         <div class="info-company"> 
             <img id="footer-logo" src="../chamber/images/sandycitychamber-a-180x180.jpg" alt="Sandy City Chamber Logo" width="180" height="180">
             <h3 id="footer-company">Sandy City Chamber</h3>
@@ -85,14 +93,14 @@
         </div>
 
         <div class="info-stats">
-            <p id="visits">Total visits: <span id="visits-total"></span> | Days since last visit: <span id="visits-last"></span></p>
+            <p id="visits">Total visits: <span id="visit-count"></span> | Days since last visit: <span id="visit-since"></span></p>
             <p id="credits"></p>
             <p id="copy">&copy; <span id="current-year"></span> Sandy City Chamber | Jordan Eldredge | Last Modification: <span id="last-modified" class="highlight"></span></p>
         </div>
     </footer>
-
-    <script src="../chamber/scripts/get-dates.js"></script> <!-- Page Scripts -->
-
+    <!-- Page Scripts -->
+    <script src="../chamber/scripts/get-dates.js"></script> 
+    <script src="../chamber/scripts/last-visited.js"></script> 
     </div> <!-- End of content -->
 </body>
 </html>
