@@ -89,20 +89,25 @@ header {
     color: var(--white);
 }
 
+#header-links {
+    grid-column: 3/4; grid-row: 1/2;    
+    padding: 6px 0px;
+}
+
+
 #link-facebook, #link-linkedin {
+    display: inline;
     width: 40px; height: 40px;
-    padding: 10px 10px 10px 0px;
+    padding: 4px;
     cursor: pointer;
 }
 
-#link-facebook {
-    grid-column: 3/4; grid-row: 1/2;
-    
+#header-links img {
+    border: 4px solid var(--primary);
+    border-radius: 40px;
 }
-
-#link-linkedin {
-    grid-column: 4/5; grid-row: 1/2;
-}
+#header-links img:hover {border: 4px solid var(--white);}
+#header-links img:active {border: 4px solid var(--accent2);}
 
 /* Navigation */
 
@@ -157,6 +162,33 @@ li a.open {
 	display: flex;
 }
 
+figure, picture {
+    margin: 0px;
+    padding: 0px;
+}
+
+figcaption {
+    padding: 6px 10px;
+    font-family: var(--paragraph);
+    font-weight: 400;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+figcaption a, figcaption a:hover {
+    color: var(--accent2);
+}
+
+figcaption a:active {
+    color: var(--accent1);
+}
+
+img {
+    display: block;
+    width: 100%; height: auto;
+    margin: 0 auto;
+}
+
 /* Responsive Menu */
 .menu {
     width: 100%;
@@ -195,15 +227,6 @@ main {
     padding: 12px;
 }
 
-.call-to-action, .events, .weather, .join, .spotlight {
-    border: 1px solid var(--background);
-    width: auto; height: auto;
-    min-height: 200px;
-    margin-bottom: 20px;
-    background-color: var(--background);
-    box-shadow: 0px 2px 5px 0px var(--shadow);
-}
-
 .box-title {
     padding: 4px 10px;
     background-color: var(--accent2);
@@ -215,13 +238,6 @@ main {
 }
 .box-content {
     padding: 10px;
-}
-
-.spotlight-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-row-gap: 12px;
 }
 
 .sub-box {
@@ -270,7 +286,57 @@ strong {
     color: var(--accent2);
 }
 
-/* Index Page Content */
+#visit-count, #visit-since {
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Home Page Content */
+
+.call-to-action, .events, .weather, .join, .spotlight {
+    border: 1px solid var(--background);
+    width: auto; height: auto;
+    min-height: 200px;
+    margin-bottom: 20px;
+    background-color: var(--background);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 12px;
+}
+
+.call-to-action {
+    position: relative;
+}
+
+.hero-title {
+    position: absolute;
+    width: 50%; height: auto;
+    min-width: 200px;
+    top: 20px;
+    left: 0px;
+    text-align: center;
+    padding: 4px 10px 4px 10px;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+#hero-image img {
+    width: 100%; height: auto;
+    max-width: 1920px;
+    padding: 0px;
+    background-color: lightgray;
+}
+
+#hero-image img {
+    object-fit: cover;
+}
+
 #join-button {
     display: flex;
     justify-content: space-evenly;
@@ -286,4 +352,58 @@ strong {
 #join-button:active {
     background-color: var(--primary);
     color: var(--accent2);
+}
+
+/* Discover Page Content */
+
+.discover-grid {
+    display: block;
+}
+
+.discover-box {
+    border: 1px solid var(--background);
+    width: auto; height: auto;
+    margin-bottom: 60px;
+    background-color: var(--background);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+}
+
+.discover-box .box-title {
+    min-width: 200px;
+}
+
+.discover-box .box-content {
+    padding-bottom: 40px;
+}
+
+.discover-grid img {
+    transition: 1s;
+    max-width: 600px;
+    background-color: lightgray;
+}
+
+.discover-grid img:hover {
+    transition: 0.5s;
+    transform: scale(1.02, 1.02);
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+}
+
+.discover-grid img:active {
+    filter: blur(2px);
+    transition: 2s;
+}
+
+.fade-in {
+    animation: fade 3s;
+}
+
+@keyframes highlight {
+    0% {filter: none;}
+    100% {filter: sepia();}
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
