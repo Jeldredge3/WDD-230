@@ -112,9 +112,6 @@ header {
 /* Navigation */
 
 .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     text-align: center;
 	padding: 0px;
     margin: 0px;
@@ -127,6 +124,21 @@ nav li {
 }
 
 nav li:first-child {
+    display: block;
+}
+#nav-button.active {
+    background-color: var(--accent1);
+}
+#nav-current::before {
+    display: inline-block;
+    margin: 2px 4px;
+    width: 8px; height: 8px;
+    border-radius: 10px;
+    background-color: var(--accent1);
+    content: "";
+}
+
+nav li.open {
     display: block;
 }
 
@@ -152,14 +164,6 @@ nav a:active {
 .active {
     background-color: var(--black);
     color: var(--accent1);
-}
-
-li a.menu-item {
-	display: none;
-}
-
-li a.open {
-	display: flex;
 }
 
 figure, picture {
@@ -396,11 +400,6 @@ strong {
 
 .fade-in {
     animation: fade 3s;
-}
-
-@keyframes highlight {
-    0% {filter: none;}
-    100% {filter: sepia();}
 }
 
 @keyframes fade {
