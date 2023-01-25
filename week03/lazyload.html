@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta name="author" content="Jordan Eldredge">
+    <meta name="description" content="Native Lazy Loading assignment for WDD 230: Web Frontend Development">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="je-favicon.ico">
+    <link rel="stylesheet" href="../week03/styles/normalize.css">
+    <link rel="stylesheet" href="../week03/styles/lazyload.css">
+    <title>WDD 230 - Lazy Loading - Jordan Eldredge</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script>
+
+    <div class="content">
+    <header>
+        <div class="header-top">
+            <span id="link-portal"><a href="../index.html">Portal</a></span>
+        </div>
+        <div class="header-bottom">
+            <h1 id="author">Lazy Loading</h1>
+        </div>
+    </header>
+    <main>
+        <picture>
+            <img data-src="../week03/images/image-1.jpg" src="../week03/images/placeholder-400x600.webp" alt="Placeholder Image 1" loading="lazy" width="400" height="600">
+        </picture>
+
+        <picture>
+            <img data-src="../week03/images/image-2.jpg" src="../week03/images/placeholder-400x600.webp" alt="Placeholder Image 1" loading="lazy" width="400" height="600">
+        </picture>
+
+        <picture>
+            <img data-src="../week03/images/image-3.jpg" src="../week03/images/placeholder-400x600.webp" alt="Placeholder Image 1" loading="lazy" width="400" height="600">
+        </picture>
+
+        <picture>
+            <img data-src="../week03/images/image-4.jpg" src="../week03/images/placeholder-400x600.webp" alt="Placeholder Image 1" loading="lazy" width="400" height="600">
+        </picture>
+
+        <picture>
+            <img data-src="../week03/images/image-5.jpg" src="../week03/images/placeholder-400x600.webp" alt="Placeholder Image 1" loading="lazy" width="400" height="600">
+        </picture>
+
+        <picture>
+            <img data-src="../week03/images/image-6.jpg" src="../week03/images/placeholder-400x600.webp" alt="Placeholder Image 1" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    </div>
+    <footer class="footer">
+        <p id="copy">&copy; <span id="current-year"></span> | Jordan Eldredge | USA</p>
+    </footer>
+    <script src="../week03/scripts/lazyload.js"></script>
+</body>
+</html>
