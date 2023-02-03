@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="je-favicon.ico">
+    <link rel="stylesheet" href="portal/styles/normalize.css">
     <link rel="stylesheet" href="portal/styles/base.css">
     <link rel="stylesheet" href="portal/styles/larger.css">
 
@@ -60,7 +61,7 @@
 
         <div id="activities" class="adjustable">
             <h2 class="box-title">Learning Activities</h2>
-            <div class="box-content">https://codepen.io/jeldredge3/pen/OJwZbRq
+            <div class="box-content">
                 <ul>
                     <li>Week 01: <a href="week01/holygrail.html">Grail</a> | <a href="week01/media-query.html">Media Query</a> | <a href="week01/chamber-site-plan.html">Site Plan</a></li>
                     <li>Week 02: <a href="week02/design.html">Design Page</a> | <a href="https://codepen.io/jeldredge3/pen/oNMGmJL">Hamburger Menu </a> | <a href="week02/bom.html">BoM Favorite</a></li>
@@ -94,6 +95,67 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
+
+        <div id="contact" class="adjustable">
+            <h2 class="box-title">Contact Form</h2>
+            <div class="box-content">
+                <div id="form-input">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label>Page Rating<span id="display-rating">-</span><input id="input-rating" type="range" value="5" min="0" max="10"></label>
+                        <label>First Name<input id="input-fname" type="text" name="fname"></label>
+                        <label>Last Name<input id="input-lname" type="text" name="lname"></label>
+                        <label>Email<input id="input-email" type="email" name="email" placeholder="example@email.com"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Account Creation</legend>
+                        <label>Username
+                            <input id="input-user" type="text" name="username" pattern="(?=.*d).{5,12}" title="Username must be between 5-12 characters and include atleast 1 number.">
+                        </label>
+                        <label>Confirm Username
+                            <input id="input-confirm" type="text" name="username">
+                        </label>
+                        <p class="p-hint hidden">* Username does not match.</p>
+                        <label>Password<input id="input-pass" type="password" name="pass"></label>
+                    </fieldset>
+                    <input id="form-submit" type="submit" value="Send Form">
+                </div>
+                <div id="form-output" class="hidden">
+                    <hr>
+                    <table>
+                        <caption>Figure 1: Example HTML Table Output</caption>
+                        <thead>
+                            <tr class="table-header">
+                                <th colspan="2" scope="colgroup">Form Input</th>
+                            </tr>
+                            <tr class="table-subheader">
+                                <th scope="col">Field</th>
+                                <th scope="col">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Name:</td>
+                                <td><span id="output-name">N/A</span></td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><span id="output-email">N/A</span></td>
+                            </tr>
+                            <tr>
+                                <td>Rating:</td>
+                                <td><span id="output-rating">N/A</span></td>
+                            </tr>
+                            <tr>
+                                <td>Username:</td>
+                                <td><span id="output-username">N/A</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
     </main>
     </div>
     <footer class="footer">
@@ -104,6 +166,7 @@
     <script src="portal/scripts/last-visited.js"></script>
     <script src="portal/scripts/responsive-menu.js"></script>
     <script src="portal/scripts/dark-mode.js"></script>
+    <script src="portal/scripts/form-submit.js"></script>
 </body>
     
 </html>
