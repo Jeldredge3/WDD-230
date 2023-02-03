@@ -1,0 +1,6 @@
+{   
+    "week01": ["week01/holygrail.html", "week01/media-query.html", "week01/chamber-site-plan.html"],
+    "week02": ["week02/design.html", "https://codepen.io/jeldredge3/pen/oNMGmJL", "week02/bom.html"],
+    "week03": ["week03/landscape.html", "week03/lazyload.html", "https://codepen.io/jeldredge3/pen/rNrdZdO?editors=1100"],
+    "week04": ["https://codepen.io/jeldredge3/pen/OJwZbRq", "week04/images/w3schools-css-combinators.jpg", "week04/tablebuild.html", "week04/form-index.html"]
+}
