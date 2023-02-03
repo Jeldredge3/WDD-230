@@ -100,25 +100,24 @@
             <h2 class="box-title">Contact Form</h2>
             <div class="box-content">
                 <div id="form-input">
+                    <form id="contact-form">
                     <fieldset>
                         <legend>Contact Information</legend>
                         <label>Page Rating<span id="display-rating">-</span><input id="input-rating" type="range" value="5" min="0" max="10"></label>
-                        <label>First Name<input id="input-fname" type="text" name="fname"></label>
-                        <label>Last Name<input id="input-lname" type="text" name="lname"></label>
-                        <label>Email<input id="input-email" type="email" name="email" placeholder="example@email.com"></label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Account Creation</legend>
-                        <label>Username
-                            <input id="input-user" type="text" name="username" pattern="(?=.*d).{5,12}" title="Username must be between 5-12 characters and include atleast 1 number.">
+                        <label>First Name<input id="input-fname" type="text" name="fname" required></label>
+                        <label>Last Name<input id="input-lname" type="text" name="lname" required></label>
+                        <label>Email<input id="input-email" type="email" name="email" placeholder="example@email.com" required></label>
+
+                        <label>Username Identifier
+                            <input id="input-user" type="password" name="username" pattern="(?=.*d).{5,12}" title="Username must be between 5-12 characters and include atleast 1 number." required>
                         </label>
-                        <label>Confirm Username
-                            <input id="input-confirm" type="text" name="username">
+                        <label>Confirm Username Identifier
+                            <input id="input-confirm" type="text" name="username" pattern="(?=.*d).{5,12}" title="Username must be between 5-12 characters and include atleast 1 number." required>
                         </label>
-                        <p class="p-hint hidden">* Username does not match.</p>
-                        <label>Password<input id="input-pass" type="password" name="pass"></label>
+                        <p class="p-hint hidden">* Username Identifier does not match.</p>
                     </fieldset>
                     <input id="form-submit" type="submit" value="Send Form">
+                    </form>
                 </div>
                 <div id="form-output" class="hidden">
                     <hr>
