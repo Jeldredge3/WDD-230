@@ -1,0 +1,77 @@
+{
+    "wardFamilies": [
+        {
+        "familyName": "Evans",
+        "dateMoved": "December 28, 2022",
+        "familySize": "5",
+        "visited": "false",
+        "familyMembers": [
+            "Donavan Evans",
+            "Krista Evans",
+            "Lilith Evans",
+            "Margarett Evans",
+            "Lincoln Evans"
+            ]
+        },
+        {
+        "familyName": "Jensen",
+        "dateMoved": "October 24, 2022",
+        "familySize": "6",
+        "visited": "false",
+        "familyMembers": [
+            "Dave Jensen",
+            "Marie Jensen",
+            "Gregory Jensen",
+            "Jimmy Jensen",
+            "Kimberly Jensen",
+            "Laura Jensen"
+            ]
+        },
+        {
+        "familyName": "Swanson",
+        "dateMoved": "June 6, 2022",
+        "familySize": "5",
+        "visited": "true",
+        "familyMembers": [
+            "Bill Swanson",
+            "Shay Swanson",
+            "Sandra Swanson",
+            "Olivia Swanson",
+            "Timothy Swanson"
+            ]
+        },
+        {
+        "familyName": "Kahale",
+        "dateMoved": "May 28, 2022",
+        "familySize": "4",
+        "visited": "true",
+        "familyMembers": [
+            "Kione Kahale",
+            "Leilani Kahale",
+            "Lana Kahale",
+            "Lau Kahale"
+            ]
+        },
+        {
+        "familyName": "Martinez",
+        "dateMoved": "May 16, 2022",
+        "familySize": "2",
+        "visited": "true",
+        "familyMembers": [
+            "Christopher Martinez",
+            "Chloe Martinez"
+            ]
+        },
+        {
+        "familyName": "O'Neal",
+        "dateMoved": "March 11, 2022",
+        "familySize": "3",
+        "visited": "true",
+        "familyMembers": [
+            "Mike O'Neal",
+            "Lindsay O'Neal",
+            "Noah O'Neal"
+            ]
+        }
+    ]
+}

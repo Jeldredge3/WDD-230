@@ -90,7 +90,7 @@ header a:active {color: var(--accent1);}
     border-radius: 60px;
 }
 
-#author {
+#page-title {
     padding: 0px;
     text-align: center;
     color: var(--white);
@@ -126,6 +126,25 @@ main {
     color: var(--white);
 }
 
+#weather {
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--paragraph);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+    background-color: var(--background);
+}
+
+#weather img {
+    width: 100px; height: auto;
+    border-radius: 4px;
+    margin: 10px auto;
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+    background-color: var(--black);
+}
+
 footer {
     padding: 20px 0px;
     text-align: center;
@@ -133,57 +152,15 @@ footer {
     color: var(--white);
 }
 
+img {
+    display: block;
+    margin: 0px;
+}
+
 hr {
     margin-top: 20px;
     border: 3px solid var(--accent1);
     border-radius: 6px;
-}
-
-/* Table CSS */
-
-table caption {
-    padding: 4px;
-    font-family: var(--paragraph);
-    font-size: 16px;
-}
-
-table {
-    margin: 60px auto;
-    border: 6px solid var(--primary);
-    border-radius: 6px;
-    box-shadow: 0px 5px 10px 0px var(--shadow);
-    border-collapse: collapse;
-}
-
-tr:first-child th {
-    font-family: var(--heading);
-    font-size: 32px;
-    background-color: var(--black);
-    color: var(--white);
-}
-
-th:first-child {
-    background-color: var(--black);
-}
-
-th, td {
-    padding: 8px;
-    border: 1px solid var(--black);
-    font-family: var(--paragraph);
-    font-size: 22px;
-}
-
-th {
-    background-color: var(--secondary);
-    color: var(--white);
-}
-
-td {
-    text-align: center;
-}
-
-tbody tr:nth-child(even) {
-    background-color: var(--gray);
 }
 
 

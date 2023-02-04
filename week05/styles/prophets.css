@@ -90,7 +90,7 @@ header a:active {color: var(--accent1);}
     border-radius: 60px;
 }
 
-#author {
+#page-title {
     padding: 0px;
     text-align: center;
     color: var(--white);
@@ -102,29 +102,41 @@ main {
     padding: 10px 20px;
 }
 
-.box-title {
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 3em;
+    row-gap: 2em;
+}
+
+.card {
+    width: 350px;
+    border-radius: 8px;
+    margin: 0 auto;
+    background-color: var(--background);
+    box-shadow: 0px 5px 10px 0px var(--shadow);
+}
+
+.card-title {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    padding: 6px 12px;
-    font-size: 24px;
+    padding: 10px 10px;
+    font-size: 26px;
+    font-family: var(--heading);
+    text-align: center;
     background-color: var(--accent1);
     background-image: linear-gradient(var(--accent1), var(--shading));
     color: var(--white);
 }
 
-.box-content {
-    height: auto;
-    min-height: 80px;
+.card-info {
+    text-align: center;
     padding: 10px;
+    font-size: 18px;
+    font-family: var(--paragraph);
 }
 
-.box-sub {
-    margin-top: 20px;
-    padding: 20px;
-    box-shadow: 0px 2px 5px 0px var(--shadow);
-    background-color: var(--black);
-    color: var(--white);
-}
+
 
 footer {
     padding: 20px 0px;
@@ -133,57 +145,15 @@ footer {
     color: var(--white);
 }
 
+img {
+    display: block;
+    margin: 0px;
+}
+
 hr {
     margin-top: 20px;
     border: 3px solid var(--accent1);
     border-radius: 6px;
-}
-
-/* Table CSS */
-
-table caption {
-    padding: 4px;
-    font-family: var(--paragraph);
-    font-size: 16px;
-}
-
-table {
-    margin: 60px auto;
-    border: 6px solid var(--primary);
-    border-radius: 6px;
-    box-shadow: 0px 5px 10px 0px var(--shadow);
-    border-collapse: collapse;
-}
-
-tr:first-child th {
-    font-family: var(--heading);
-    font-size: 32px;
-    background-color: var(--black);
-    color: var(--white);
-}
-
-th:first-child {
-    background-color: var(--black);
-}
-
-th, td {
-    padding: 8px;
-    border: 1px solid var(--black);
-    font-family: var(--paragraph);
-    font-size: 22px;
-}
-
-th {
-    background-color: var(--secondary);
-    color: var(--white);
-}
-
-td {
-    text-align: center;
-}
-
-tbody tr:nth-child(even) {
-    background-color: var(--gray);
 }
 
 
