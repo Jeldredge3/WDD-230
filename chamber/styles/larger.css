@@ -74,6 +74,24 @@
         margin-bottom: 80px;
     }
 
+    /* Join Page Content */
+
+    #memberships {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    #mem-selection {
+       grid-column: 1/2; grid-row: 1/2;
+    }
+    
+    #mem-description {
+        grid-column: 2/3; grid-row: 1/2;
+    }
+
+    textarea {
+        max-width: 90%;
+    }
 }
 
 /* Medium Display Properties (~ 520px-1200px wide) */
