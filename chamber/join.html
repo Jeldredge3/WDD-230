@@ -46,33 +46,33 @@
     <main class="join-grid">
         <div id="form-area"> 
             <h1 id="form-title">Sandy City Chamber Application</h1>
-            <p id="form-instructions">Please complete the form below so we may review your application.</p>
+            <p id="form-instructions">Please complete the form below so we may review your application. Required fields are marked with an asterisk.</p>
 
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Applicant Information</legend>
-                <label><span class="label-title">First Name</span>
+                <label><span class="label-title req">First Name</span>
                     <input type="text" id="info-first" name="first-name" required>
                 </label>
-                <label><span class="label-title">Last Name</span>
+                <label><span class="label-title req">Last Name</span>
                     <input type="text" id="info-last" name="first-name" required>
                 </label>
                 <label><span class="label-title">Business Title</span>
                     <input type="text" id="info-position" name="position" minlength="7" pattern="^[a-zA-Z]+[a-zA-Z- ]*[a-zA-Z]$" 
                     title="Business Title must be atleast 7 characters in length and only contain letters A-Z, hyphens, and spaces.">
                 </label>
-                <label><span class="label-title">Business Name</span>
+                <label><span class="label-title req">Business Name</span>
                     <input type="text" id="info-company" name="company" required>
                 </label>
             </fieldset>
 
             <fieldset>
                 <legend>Contact Information</legend>
-                <label><span class="label-title">Email</span>
+                <label><span class="label-title req">Email</span>
                     <input type="email" id="info-email" name="email" placeholder="example@email.com" title="Provide an email address." required>
                 </label>
-                <label><span class="label-title">Phone Number</span>
-                    <input type="phone" id="info-phone" name="phone" title="Phone number must be entered without spaces, hyphens, or underscores." required>
+                <label><span class="label-title req">Phone Number</span>
+                    <input type="tel" id="info-phone" name="phone" title="Phone number must be entered without spaces, hyphens, or underscores." required>
                 </label>
             </fieldset>
 
@@ -81,14 +81,14 @@
                 <div id="mem-selection">
                 <h2 class="label-title">Choose a Membership Level</h2>
                 <p class="p-hint">Select one of the following memberships to apply for.</p>
-                
                     <label class="label-radio"><input type="radio" id="mem-np" name="membership" value="beginner">NP</label>
-                    <label class="label-radio"><input type="radio" id="mem-bronze" name="membership" value="beginner">Bronze</label>
+                    <label class="label-radio"><input type="radio" id="mem-bronze" name="membership" value="beginner" checked="checked">Bronze</label>
                     <label class="label-radio"><input type="radio" id="mem-silver" name="membership" value="intermediate">Silver</label>
                     <label class="label-radio"><input type="radio" id="mem-gold" name="membership" value="advanced">Gold</label>
                 </div>
                 <div id="mem-description">
-
+                    <p>These membership levels have increasing costs as well as increased benefits per level. 
+                        Benefits might include special events, training, advertising (like spotlight positions on the home page), event discounts, etc.</p>
                 </div>
             </fieldset>
 
