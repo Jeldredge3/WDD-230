@@ -89,6 +89,10 @@
         grid-column: 2/3; grid-row: 1/2;
     }
 
+    #mem-description p {
+        margin: 48px auto 0px auto;
+    }
+
     textarea {
         max-width: 90%;
     }

@@ -15,6 +15,11 @@
         --shadow: #0303038e;
         --shading: #03030330;
 
+    /* Status Colors */
+        --good: #089f3f;
+        --poor: #bdb630;
+        --bad: #cb2121;
+
     /* Fonts */
         --heading: 'Playfair Display', georgia, serif;
         --paragraph: 'DM Sans', tahoma, sans-serif;
@@ -432,6 +437,8 @@ fieldset {
 }
 legend {
     padding: 0px 4px;
+    font-family: var(--paragraph);
+    font-size: 18px;
 }
 
 form label .label-title, form h2 {
@@ -442,7 +449,7 @@ form label .label-title, form h2 {
     font-size: 24px;
 }
 
-input[type="text"], input[type="email"], input[type="phone"] {
+input[type="text"], input[type="email"], input[type="tel"] {
     display: block;
     width: 80%; max-width: 400px;
     padding: 4px 10px;
@@ -450,10 +457,15 @@ input[type="text"], input[type="email"], input[type="phone"] {
     
 }
 input[type="radio"] {
-    margin: 10px 15px 10px 20px;
+    margin: 10px 15px 10px 10px;
 }
 .label-title {
     margin-bottom: 4px;
+}
+.req::after {
+    content: "*";
+    color: var(--bad);
+    font-weight: 400;
 }
 
 .p-hint {
@@ -471,6 +483,9 @@ input[type="radio"] {
 #mem-description {
     width: 100%; height: auto;
 }
+#mem-description p {
+    margin: 10px auto;
+}
 
 textarea {
     max-width: 360px;
@@ -482,12 +497,34 @@ textarea {
     width: 60%; max-width: 600px;
     margin: 0px auto;
     border-radius: 30px;
+    font-family: var(--paragraph);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/* Join Page CSS Effects */
+input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
+    border-left: 8px solid var(--good);
+}
+
+input[type="text"]:invalid, input[type="tel"]:invalid, input[type="email"]:invalid {
+    border-left: 8px solid var(--bad);
+}
+
+input:focus, textarea:focus {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.required {
+    color: var(--status-red);
 }
 
 /* Thankyou Page Content */
 
 .thankyou-grid {
-    min-height: 400px;
+    padding-top: 100px;
+    min-height: 350px;
 }
 
 .thankyou-message {
