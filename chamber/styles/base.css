@@ -24,6 +24,7 @@ h1 {font-size: 40px;}
 h2, h3 {font-size: 32px;}
 h4, h5, h6, button {font-size: 24px;}
 li, p {font-size: 18px;}
+label {font-size: 24px;}
 
 h1, h2, h3 {
     font-family: var(--heading);
@@ -35,7 +36,7 @@ h4, h5, h6, button {
     font-weight: 500;
     margin: 0px 0px 4px 0px;
 }
-a, li, span {
+a, li, span, label {
     font-family: var(--paragraph);
     font-weight: 400;
     margin: 0px;
@@ -47,21 +48,22 @@ p {
     margin: 0px 0px 4px 0px;
 }
 
-button {
+button, input[type="submit"] {
     border: none;
     padding: 14px 32px;
-    background-color: var(--accent2);
+    background-color: var(--primary);
+    color: var(--white);
     box-shadow: 0px 2px 5px 0px var(--shadow);
 }
 
-button:hover {
-    padding: 14px 32px;
-    font-size: 24px;
-    box-shadow: none;
+button:hover, input[type="submit"]:hover {
+    background-color: var(--secondary);
 }
 
-button:active {
-    background-color: var(--accent1);
+button:active, input[type="submit"]:active {
+    background-color: var(--black);
+    color: var(--accent2);
+    box-shadow: none;
 }
 
 body {
@@ -347,15 +349,6 @@ strong {
     min-width: 60%;
     margin: 0px auto;
     border-radius: 30px;
-    background-color: var(--secondary);
-    color: var(--white);
-}
-#join-button:hover {
-    background-color: var(--primary);
-}
-#join-button:active {
-    background-color: var(--primary);
-    color: var(--accent2);
 }
 
 /* Discover Page Content */
@@ -405,4 +398,103 @@ strong {
 @keyframes fade {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+/* Join Page Content */
+
+.join-grid {
+    display: block;
+}
+
+#form-area {
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+}
+
+#form-title {
+    padding: 10px;
+    background-color: var(--accent2);
+    color: var(--secondary);
+}
+
+#form-instructions {
+    padding: 10px 10px 0px 10px;
+}
+
+form {
+    padding: 10px;
+}
+
+fieldset {
+    padding: 4px 10px 20px 10px;
+    border: 2px solid black;
+    margin: 20px 0px;
+}
+legend {
+    padding: 0px 4px;
+}
+
+form label .label-title, form h2 {
+    display: block;
+    margin-top: 10px;
+    font-family: var(--paragraph);
+    font-weight: 800;
+    font-size: 24px;
+}
+
+input[type="text"], input[type="email"], input[type="phone"] {
+    display: block;
+    width: 80%; max-width: 400px;
+    padding: 4px 10px;
+    border: 1px solid black;
+    
+}
+input[type="radio"] {
+    margin: 10px 15px 10px 20px;
+}
+.label-title {
+    margin-bottom: 4px;
+}
+
+.p-hint {
+    margin: 10px 0px;
+}
+
+#mem-selection label {
+    display: block;
+}
+
+#mem-selection, #mem-description {
+    display: block;
+}
+
+#mem-description {
+    width: 100%; height: auto;
+}
+
+textarea {
+    max-width: 360px;
+}
+
+#submit-button {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%; max-width: 600px;
+    margin: 0px auto;
+    border-radius: 30px;
+}
+
+/* Thankyou Page Content */
+
+.thankyou-grid {
+    min-height: 400px;
+}
+
+.thankyou-message {
+    border: 1px solid var(--background);
+    width: auto; height: auto;
+    min-height: 200px;
+    margin-bottom: 20px;
+    background-color: var(--background);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
 }

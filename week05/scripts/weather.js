@@ -5,8 +5,6 @@
 /* Store URL in a variable */
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.7557&lon=6.6394&appid=50658f3950af3ac334e2b387a6c80e76&units=imperial';
 
-
-
 /* Select HTML elements */
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
@@ -35,7 +33,7 @@ async function apiFetch() {
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`; // weather icons are stored in an array[]
     const desc = weatherData.weather[0].description;
     const desc_cap = desc.charAt(0).toUpperCase() + desc.slice(1); // capitalize the first letter in the string
-    
+
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc_cap);
     captionDesc.textContent = desc_cap;

@@ -37,14 +37,72 @@
         <ul class="navigation">
             <li class="nav-li"><a id="nav-button" href="#"><i id="nav-icon" class="fa-solid fa-bars"></i></a></li> <!-- Hamburger Menu -->
             <li class="nav-li"><a href="index.html">Home</a></li> 
-            <li class="nav-li"><a id="nav-current" href="discover.html">Discover</a></li> <!-- Current Page -->
+            <li class="nav-li"><a href="discover.html">Discover</a></li> <!-- Current Page -->
             <li class="nav-li"><a href="index.html">Directory</a></li> 
-            <li class="nav-li"><a href="join.html">Join</a></li> 
+            <li class="nav-li"><a id="nav-current" href="join.html">Join</a></li> 
         </ul>
     </nav>
 
     <main class="join-grid">
+        <div id="form-area"> 
+            <h1 id="form-title">Sandy City Chamber Application</h1>
+            <p id="form-instructions">Please complete the form below so we may review your application.</p>
 
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label><span class="label-title">First Name</span>
+                    <input type="text" id="info-first" name="first-name" required>
+                </label>
+                <label><span class="label-title">Last Name</span>
+                    <input type="text" id="info-last" name="first-name" required>
+                </label>
+                <label><span class="label-title">Business Title</span>
+                    <input type="text" id="info-position" name="position" minlength="7" pattern="^[a-zA-Z]+[a-zA-Z- ]*[a-zA-Z]$" 
+                    title="Business Title must be atleast 7 characters in length and only contain letters A-Z, hyphens, and spaces.">
+                </label>
+                <label><span class="label-title">Business Name</span>
+                    <input type="text" id="info-company" name="company" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label><span class="label-title">Email</span>
+                    <input type="email" id="info-email" name="email" placeholder="example@email.com" title="Provide an email address." required>
+                </label>
+                <label><span class="label-title">Phone Number</span>
+                    <input type="phone" id="info-phone" name="phone" title="Phone number must be entered without spaces, hyphens, or underscores." required>
+                </label>
+            </fieldset>
+
+            <fieldset id="memberships">
+                <legend>Membership Level</legend>
+                <div id="mem-selection">
+                <h2 class="label-title">Choose a Membership Level</h2>
+                <p class="p-hint">Select one of the following memberships to apply for.</p>
+                
+                    <label class="label-radio"><input type="radio" id="mem-np" name="membership" value="beginner">NP</label>
+                    <label class="label-radio"><input type="radio" id="mem-bronze" name="membership" value="beginner">Bronze</label>
+                    <label class="label-radio"><input type="radio" id="mem-silver" name="membership" value="intermediate">Silver</label>
+                    <label class="label-radio"><input type="radio" id="mem-gold" name="membership" value="advanced">Gold</label>
+                </div>
+                <div id="mem-description">
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Buisness Description</legend>
+                <h2 class="label-title">Describe your Business</h2>
+                <p class="p-hint">Write a brief description about your company.</p>
+                <label><textarea id="business-description" rows="10" cols="40"></textarea></label>
+            </fieldset>
+
+            <input type="hidden" name="form-date" id="display-form-date" value="">
+            <input type="submit" id="submit-button" value="Submit Application">
+        </form>
+        </div>
     </main>
     
     <footer>
@@ -70,6 +128,7 @@
     <script src="../chamber/scripts/last-visited.js"></script> 
     <script src="../chamber/scripts/lazyload.js"></script>
     <script src="../chamber/scripts/responsive-menu.js"></script>
+    <script src="../chamber/scripts/form-date.js"></script>
     </div> <!-- End of content -->
 </body>
 </html>
