@@ -1,6 +1,7 @@
 /* JSON Reader Code */
 const requestLocal = '../portal/data/assignments.json';
-const requestURL = 'https://jeldredge3.github.io/WDD-230/portal/data/assignments.json'
+//const requestURL = 'https://jeldredge3.github.io/WDD-230/portal/data/assignments.json'
+const requestURL = 'https://run.mocky.io/v3/32e7422d-3f73-452e-a1fd-a9fff28765b9'
 
 const week01 = document.querySelector('#week01');
 const week02 = document.querySelector('#week02');
@@ -9,7 +10,7 @@ const week04 = document.querySelector('#week04');
 const week05 = document.querySelector('#week05');
 const week06 = document.querySelector('#week06');
 
-fetch(requestUrl)
+fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
