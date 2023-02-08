@@ -295,7 +295,7 @@ hr {
 
 img {
     display: block;
-    width: 100%; height: auto;
+    width: auto; height: auto;
 }
 
 .hidden {
@@ -304,6 +304,17 @@ img {
 
 .alert {
     color: var(--bad);
+}
+
+figcaption {
+    font-family: var(--paragraph);
+}
+#information figure {
+    margin: 10px 40px;
+}
+
+#information .box-content {
+    display: block;
 }
 
 /* Form Properties */
