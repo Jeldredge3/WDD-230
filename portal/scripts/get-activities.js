@@ -1,6 +1,6 @@
 /* JSON Reader Code */
-const requestUrl = '../portal/data/assignments.json';
-const outputDiv = document.querySelector('#activities-output');
+const requestLocal = '../portal/data/assignments.json';
+const requestURL = 'https://jeldredge3.github.io/WDD-230/portal/data/assignments.json'
 
 const week01 = document.querySelector('#week01');
 const week02 = document.querySelector('#week02');
