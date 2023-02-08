@@ -7,6 +7,3 @@ let lastModified = document.lastModified;
 
 outputDate.textContent = date;
 outputModified.textContent = lastModified;
-
-/* Passive Event Listener */
-document.addEventListener('touchstart', onTouchStart, {passive: true});
