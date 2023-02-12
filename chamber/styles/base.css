@@ -62,6 +62,7 @@ button, input[type="submit"] {
 }
 
 button:hover, input[type="submit"]:hover {
+    cursor: pointer;
     background-color: var(--secondary);
 }
 
@@ -196,8 +197,13 @@ figcaption a:active {
 
 img {
     display: block;
-    width: 100%; height: auto;
+    width: auto; height: auto;
     margin: 0 auto;
+}
+
+hr {
+    border: 1px solid var(--black);
+    margin: 10px;
 }
 
 /* Responsive Menu */
@@ -534,4 +540,97 @@ input:focus, textarea:focus {
     margin-bottom: 20px;
     background-color: var(--background);
     box-shadow: 0px 2px 5px 0px var(--shadow);
+}
+
+/* Directory Page Content */
+.card-title {font-size: 32px;}
+.card h4 {font-size: 24px;}
+.card p, .card a {font-size: 20px;}
+
+.directory-grid {
+    display: block;
+}
+
+.directory-box {
+    border: 1px solid var(--background);
+    width: auto; height: auto;
+    margin-bottom: 60px;
+    background-color: var(--background);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+}
+
+.directory-box .box-title {
+    min-width: 200px;
+}
+
+.directory-box .box-content {
+    padding-bottom: 40px;
+}
+
+.card-logo {
+    width: 100%; height: auto;
+    background-color: gray;
+}
+
+.card-titles {
+    background-color: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+}
+
+.card-address, .card-phone, .card-url {
+    margin: 6px 0px;
+    padding: 10px;
+}
+
+.button-selected {
+    background-color: var(--secondary);
+    color: var(--accent2);
+}
+
+#view-buttons b {
+    padding-left: 6px;
+}
+
+.view-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    column-gap: 3em;
+    row-gap: 2em;
+    padding: 0px 10px;
+}
+
+.view-cards .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr 1fr 1fr;
+    width: 390px;
+    margin: 10px 0;
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+}
+
+.view-list {
+    display: block;
+    padding: 0px;
+}
+
+.view-list .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    width: 100%;
+    margin: 0px;
+}
+
+.view-list .card:nth-child(even) {
+    background-color: var(--shading);
+}
+
+.view-list .card-titles { grid-column: 1/3; grid-row: 1/2; text-align: left; }
+.view-list .card-address { grid-column: 1/2; grid-row: 2/3; }
+.view-list .card-phone { grid-column: 2/3; grid-row: 2/3; }
+.view-list .card-url { grid-column: 1/3; grid-row: 3/4; }
+.view-list .card-logo {
+    display: none;
 }
