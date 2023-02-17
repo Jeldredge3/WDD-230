@@ -23,6 +23,7 @@
     <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script> <!-- Enables Font Awesome Icons -->
     <!-- Start of content -->
     <div class="page-content"> 
+    <span id="banner"></span>
     <header>
         <img id="header-logo" src="../chamber/images/sandycitychamber-b-100x100.jpg" alt="Sandy City Chamber Logo" width="100" height="100">
         <h1 id="header-company">Sandy City Chamber</h1>
@@ -56,20 +57,27 @@
         </div>
         <div class="events">
             <h3 class="box-title">Events</h3>
-            <h4 class="box-subtitle">Event Name</h4>
-            <p class="box-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                Aenean commodo ligula eget dolor. Aenean massa.</p>
+            <h4 class="box-subtitle">Utah Golf & Travel Expo at the Mountain America Expo Center</h4>
+            <p class="box-content">There is an upcoming event in Sandy, Utah on February 24-25, 9am-7pm. If you are a lover of golf or resorts, Be sure to check it out! </p>
         </div>
         <div class="weather">
             <h3 class="box-title">Weather</h3>
-            <p class="box-content">Example text</p>
+            <div class="box-content">
+                <span id="weather-info"></span>
+                <h4>Sandy, Utah</h4>
+                <p><span id="current-temp">__</span>&deg;F</p>
+                <figure>
+                    <img id="weather-icon" src="../chamber/images/placeholder/placeholder-64x64.webp" alt="Weather Icon" width="64" height="64">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
         </div>
         <div class="spotlight">
             <h3 class="box-title">Spotlight</h3>
             <div class="spotlight-grid">
-                <div class="sub-box"><p>Spotlight 1</p></div>
-                <div class="sub-box"><p>Spotlight 2</p></div>
-                <div class="sub-box"><p>Spotlight 3</p></div>
+                <div id="spotlight-1" class="sub-box"></div>
+                <div id="spotlight-2" class="sub-box"></div>
+                <div id="spotlight-3" class="sub-box"></div>
             </div>
             
         </div>
@@ -99,9 +107,12 @@
         </div>
     </footer>
     <!-- Page Scripts -->
-    <script src="../chamber/scripts/get-dates.js"></script> 
+    <script src="../chamber/scripts/get-dates.js"></script>
+    <script src="../chamber/scripts/get-weekday.js"></script> 
     <script src="../chamber/scripts/last-visited.js"></script>
     <script src="../chamber/scripts/responsive-menu.js"></script>
+    <script src="../chamber/scripts/business-spotlight.js"></script>
+    <script src="../chamber/scripts/weather.js"></script>
     </div> <!-- End of content -->
 </body>
 </html>

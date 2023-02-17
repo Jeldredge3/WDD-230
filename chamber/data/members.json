@@ -8,7 +8,7 @@
         "phone": "18015713842",
         "url": "http://www.big5sportinggoods.com/",
         "logo": "../chamber/images/businesses/big5-sporting-goods-300x200.jpg",
-        "mem_lvl": "Golds"
+        "mem_lvl": "Gold"
     },
     {
         "name": "Smiths",
@@ -18,7 +18,7 @@
         "phone": "18015721396",
         "url": "https://www.smithsfoodanddrug.com/",
         "logo": "../chamber/images/businesses/smiths-300x200.jpg",
-        "mem_lvl": "Gold"
+        "mem_lvl": "Bronze"
     },
     {
         "name": "Quick Quack Car Wash",
@@ -38,7 +38,7 @@
         "phone": "18013001228",
         "url": "http://www.sunnysidecorals.com/",
         "logo": "../chamber/images/businesses/sunnyside-corals-300x200.jpg",
-        "mem_lvl": "Bronze"
+        "mem_lvl": "Silver"
     },
     {
         "name": "The Home Depot",
@@ -88,7 +88,7 @@
         "phone": "+18019373000",
         "url": "https://www.key.com/",
         "logo": "../chamber/images/businesses/key-bank-300x200.jpg",
-        "mem_lvl": "Silver"
+        "mem_lvl": "Gold"
     }
     ]
 }
