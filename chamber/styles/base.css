@@ -28,7 +28,7 @@
 h1 {font-size: 40px;}
 h2, h3 {font-size: 32px;}
 h4, h5, h6, button {font-size: 24px;}
-li, p {font-size: 18px;}
+li, p, figcaption {font-size: 18px;}
 label {font-size: 24px;}
 
 h1, h2, h3 {
@@ -78,6 +78,12 @@ body {
 }
 
 /* Header */
+
+#banner {
+    padding: 4px 10px;
+    text-align: center;
+    background-color: var(--white);
+}
 
 header {
     display: grid;
@@ -320,13 +326,6 @@ strong {
     box-shadow: 0px 2px 5px 0px var(--shadow);
 }
 
-.spotlight-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-row-gap: 12px;
-}
-
 .call-to-action {
     position: relative;
 }
@@ -360,6 +359,69 @@ strong {
     min-width: 60%;
     margin: 0px auto;
     border-radius: 30px;
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 12px;
+}
+#spotlight-1, #spotlight-2, #spotlight-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto auto;
+    text-align: center;
+}
+
+.spotlight-grid img {
+    grid-column: 1/2; grid-row: 1/2;
+    max-width: 100%; max-height: 100%;
+    border: 2px solid var(--black);
+}
+.spotlight-grid h4 {
+    grid-column: 1/3; grid-row: 2/3;
+    padding: 10px;
+}
+.spotlight-grid a {
+    grid-column: 1/3; grid-row: 3/4;
+    height: 22px;
+}
+.spotlight-grid p {
+    grid-column: 2/3; grid-row: 1/2;
+    padding: 10px;
+}
+
+.weather .box-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.weather h4 {
+    grid-column: 1/3; grid-row: 1/2;
+    text-align: center;
+}
+
+.weather p {
+    grid-column: 2/3; grid-row: 2/3;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.weather figure {
+    grid-column: 1/2; grid-row: 2/3;
+    width: 100%; max-width: 132px;
+    margin: 0 auto;
+}
+.weather figcaption {
+    text-align: center;
+    background: none;
+    color: var(--black);
+}
+#weather-icon {
+    padding: 10px;
 }
 
 /* Discover Page Content */
