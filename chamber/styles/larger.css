@@ -51,7 +51,7 @@
     .home-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto 1fr;
+        grid-template-rows: auto auto 1fr 1fr;
         grid-gap: 1rem;
     }
 
