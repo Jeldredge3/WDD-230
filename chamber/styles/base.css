@@ -670,7 +670,7 @@ input:focus, textarea:focus {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr 1fr 1fr;
     width: 390px;
-    margin: 10px 0;
+    margin: 10px auto;
     box-shadow: 0px 2px 5px 0px var(--shadow);
 }
 
